@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: hsl(0, 0%, 81%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* webpage start */
+@media (min-width: 601px) {
+  #container {
+    margin: 10em auto;
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "dani dani jona kira"
+      "jean patr patr kira";
+    gap: 2em;
+  }
+}
+
+#daniel-card {
+  grid-area: dani;
+  background-color: hsl(263, 55%, 52%);
+  color: hsl(0, 0%, 100%);
+}
+
+.light-p {
+  color: hsl(0, 0%, 81%);
+}
+
+.light-h4 {
+  color: hsl(214, 17%, 92%);
+}
+
+h4 {
+  line-height: 1.2;
+}
+
+.light-h4 span {
+  color: hsl(0, 0%, 81%);
+}
+
+#jonathan-card {
+  grid-area: jona;
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(0, 0%, 100%);
+}
+
+#jeanette-card {
+  grid-area: jean;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(219, 29%, 14%);
+}
+
+#patrick-card {
+  grid-area: patr;
+  background-color: hsl(219, 29%, 14%);
+  color: hsl(0, 0%, 100%);
+}
+
+#kira-card {
+  grid-area: kira;
+  background-color: hsl(0, 0%, 100%);
+}
+
+#jeanette-card,
+#kira-card {
+  color: hsl(219, 29%, 14%);
+}
+#jeanette-card span,
+#kira-card span {
+  color: hsl(217, 19%, 35%);
+}
+.card-head {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  gap: 15px;
+}
+
+.card-img {
+  border-radius: 50%;
+  width: 2.5em;
+}
+
+#name-info {
+  grid-template-columns: 1fr;
+}
+/* webpage end */
+
+.testimonial {
+  box-shadow: 0.5px 0.5px 10px grey;
+  border-radius: 0.5em;
+  padding: 3em;
+}
+
+@media (max-width: 600px) {
+  #container {
+    margin: 5em 3em 0 3em;
+    gap: 3em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "dani"
+      "jona"
+      "jean"
+      "patr"
+      "kira";
+  }
+}
